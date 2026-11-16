@@ -1,5 +1,9 @@
 # DevBridge MCP
 
+Created and maintained by **[GeekMac-dev](https://github.com/GeekMac-dev)**.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A Windows-based local MCP server for AI-assisted programming. The public edition provides file inspection and editing, controlled terminal and project tasks, Git inspection, browser testing, UI/UX design references, optional coding integrations, activity monitoring, and local Codex CLI history search.
 
 **Not included:** private data, personal development profiles, SQL analytics, sales reporting, ERPNext-specific WSL automation, mobile gateway, or animation studio features.
@@ -82,6 +86,14 @@ Custom server features, especially **write/modify actions**, are account/workspa
 | Optional Codex history location | `CODEX_HOME` | Auto-detected |
 
 If a tool reports that it is disabled, review the relevant setting and restart the bridge. Opt-in settings do **not** install external tools. Example: enabling Semgrep requires Semgrep to be separately installed. Consult [PLAYWRIGHT_SETUP.md](PLAYWRIGHT_SETUP.md) for browser-mode configuration.
+
+## License, creator credit, and contributions
+
+DevBridge MCP is released under the [MIT License](LICENSE).
+
+**Copyright © 2026 GeekMac-dev.** You may use, modify, and redistribute this project under the MIT terms. Redistributions and substantial copies must retain the copyright and license notice. A link back to [the original repository](https://github.com/GeekMac-dev/devbridge_mcp) is appreciated, although the MIT License does not require a prominent credit in your app interface.
+
+Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Only contribute code you have the rights to license, and preserve existing third-party copyright notices and licenses where applicable.
 
 ## 4. Security and sharing
 
