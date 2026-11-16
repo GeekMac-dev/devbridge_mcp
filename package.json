@@ -1,0 +1,33 @@
+{
+  "name": "devbridge-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test:design": "npm run build && node --test dist/design-library.test.js",
+    "test:integrations": "npm run build && node --test dist/integrations.test.js",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "scan": "tsx src/cli.ts scan",
+    "search": "tsx src/cli.ts search",
+    "dev:http": "tsx src/http.ts",
+    "start:http": "node dist/http.js",
+    "activity": "node dist/activity-viewer.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "axe-core": "^4.14.0",
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0",
+    "playwright": "^1.65.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
