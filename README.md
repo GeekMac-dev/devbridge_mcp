@@ -24,16 +24,14 @@ No Docker, MariaDB, SQL Server, or paid integrations are required.
 Open PowerShell in the cloned repository:
 
 ```powershell
-git clone https://github.com/YOUR-ACCOUNT/YOUR-REPO.git
-cd YOUR-REPO
+git clone https://github.com/GeekMac-dev/devbridge_mcp.git
+cd devbridge_mcp
 npm ci
 npm run build
 npm run test:integrations
 npm run test:design
 Copy-Item .env.example .env.local
 ```
-
-Replace the placeholder GitHub URL with the actual repository address once published.
 
 Edit `.env.local` to match **your machine**. In particular set `BRIDGE_WRITE_ROOTS` to the directories you want the bridge to access, such as `D:\Projects`. Do not set broad drive roots unless you understand the risks. The supplied `.env.example` deliberately starts optional execution/browser features disabled.
 
@@ -94,6 +92,15 @@ DevBridge MCP is released under the [MIT License](LICENSE).
 **Copyright © 2026 GeekMac-dev.** You may use, modify, and redistribute this project under the MIT terms. Redistributions and substantial copies must retain the copyright and license notice. A link back to [the original repository](https://github.com/GeekMac-dev/devbridge_mcp) is appreciated, although the MIT License does not require a prominent credit in your app interface.
 
 Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Only contribute code you have the rights to license, and preserve existing third-party copyright notices and licenses where applicable.
+
+## Community standards
+
+- [Code of Conduct](CODE_OF_CONDUCT.md) — respectful, constructive collaboration.
+- [Contributing Guidelines](CONTRIBUTING.md) — contribution workflow and checks.
+- [Security Policy](SECURITY.md) — private vulnerability reporting and safe operation.
+- [Issue Templates](.github/ISSUE_TEMPLATE) — bug reports and feature requests.
+- [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md) — changes, tests, and security checklist.
+- [Accessibility Statement](ACCESSIBILITY.md) — accessibility goals and reporting.
 
 ## 4. Security and sharing
 

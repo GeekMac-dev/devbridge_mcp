@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a programming-focused improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the developer problem and proposed solution.
+        Do not share private project code or credentials.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or considerations (optional)
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Scope and safety
+      options:
+        - label: I understand that new file, terminal, browser, or network capabilities should be opt-in and permission-scoped.
+          required: true

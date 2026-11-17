@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible bug (no credentials or private data)
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. **Do not share secrets or security vulnerabilities here.**
+        For a vulnerability, follow [SECURITY.md](../../SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: DevBridge MCP version or commit
+      placeholder: "e.g., main / commit hash"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected feature
+      options:
+        - File operations
+        - Terminal and project tasks
+        - Git inspection
+        - Browser and Playwright
+        - ChatGPT Plugins / tunnel
+        - Design and integrations
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use sample data, not real credentials or private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized error messages (optional)
+      description: Remove tokens, private data, internal hostnames, user paths, and screenshots of sensitive content.
+      render: shell
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Safety check
+      options:
+        - label: I have removed credentials and private information from this report.
+          required: true
